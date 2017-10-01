@@ -27,46 +27,6 @@ Up-to-date apps.json:
 6. python3 getwt.py
 7. Web browse to the IP and Port configured in configs
 
-
-### Code Structure
-```
-clues.py
-data_gather.py
-detection.py
-group.py
-output.py
-README.md
-thirdeye.py
-tools.py
-etc
---apps.json
---config.cfg
---passive_dns.db
-static
---css
-----bootstrap-grid.css
-----bootstrap-grid.css.map
-----bootstrap-grid.min.css
-----bootstrap-grid.min.css.map
-----bootstrap-reboot.css
-----bootstrap-reboot.css.map
-----bootstrap-reboot.min.css
-----bootstrap-reboot.min.css.map
-----bootstrap.css
-----bootstrap.css.map
-----bootstrap.min.css
-----bootstrap.min.css.map
---js
-----bootstrap.js
-----bootstrap.min.js
-----jquery-3.2.1.min.js
-templates
---job.html
---result.html
-utils
---create_db.py
-```
-
 ### Modules in Use
 * Python
   * Version: 3.6.2
