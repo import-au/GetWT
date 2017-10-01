@@ -1,0 +1,43 @@
+<!doctype html>
+<link rel="stylesheet" href = "{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+
+<style>
+    body {
+        background-color: black;
+    }
+</style>
+
+<html>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">ThirdEye</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="/">Search <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="/results">Results</a>
+            </div>
+        </div>
+    </nav>
+    <body>
+        <div class="container" align="center">
+            <form action = "{{ url_for('results') }}" method = "POST">
+                <table class="table-inverse">
+                    <tr>
+                        <th>Job ID:</th>
+                        <td><input type = "text" name = "job_id" /></td>
+                    </tr>
+                    <tr>
+                        <th>IP:</th>
+                        <th><textarea name = "ip" ></textarea></th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><button type="submit" class="btn btn-light">Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
