@@ -13,7 +13,7 @@ To reduce the number of malicious domains, the `MALWARE` config can be set to Fa
 * Job ID for tracking
 
 ## Outputs
-Web Technologies in use on domains seens in passive DNS records for each IP
+Web Technologies in use on domains seen in passive DNS records for each IP
 
 Up-to-date apps.json:
     https://raw.githubusercontent.com/AliasIO/Wappalyzer/master/src/apps.json
